@@ -60,6 +60,8 @@
 #include <px4_platform/gpio.h>
 #include <px4_platform/board_dma_alloc.h>
 
+#include "stm32_fdcan_sock.h"
+#include "stm32_ethernet.h"
 
 // Forward declaration
 
@@ -189,7 +191,6 @@ __EXPORT int board_app_initialize(uintptr_t arg)
 	}
 
 #endif
-
 
 // #if defined(FLASH_BASED_PARAMS)
 // 	static sector_descriptor_t params_sector_map[] = {
